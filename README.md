@@ -1,1 +1,460 @@
-# Sri-sankat-haran-balaji-maharaj-
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>श्री संकटहरण बालाजी महाराज | Arnod Balaji</title>
+  <meta name="description" content="श्री संकटहरण बालाजी महाराज, अरनोद (राजस्थान) का आधिकारिक भक्ति पोर्टल - फोटो, भजन, वीडियो, लाइव दर्शन।" />
+  <meta name="keywords" content="Arnod Balaji, संकटहरण बालाजी महाराज, मंदिर, भजन, दर्शन, राजस्थान मंदिर" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffdf5;
+    }
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    nav {
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 2px solid #b22222;
+      padding: 10px 0; /* Added padding for better spacing */
+    }
+    nav button {
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      background: #ffe4c4;
+      cursor: pointer;
+      margin: 5px; /* Added margin for spacing between buttons */
+    }
+    nav button:hover {
+      background-color: #ffd700;
+    }
+    #youtube-sub-buttons {
+      display: none; /* Hidden by default */
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%; /* Take full width */
+      margin-top: 10px; /* Space from the main nav */
+    }
+    #youtube-sub-buttons button {
+        background-color: #f0f0f0; /* Different background for sub-buttons */
+        font-size: 0.9rem; /* Slightly smaller font for sub-buttons */
+        padding: 10px 15px;
+    }
+    #youtube-sub-buttons button:hover {
+        background-color: #e0e0e0;
+    }
+    #content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 100%;
+    }
+    .shorts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 100%;
+    }
+    .video-title {
+      margin-top: 6px;
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
+      font-weight: 500;
+    }
+    .short-frame iframe {
+      aspect-ratio: 9/16;
+    }
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+    .platform-table {
+      width: 100%;
+      max-width: 900px;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    .platform-table th, .platform-table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    .platform-table th {
+      background-color: #ffe4c4;
+    }
+    .platform-table a {
+      text-decoration: none;
+      color: #b22222;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .platform-table a:hover {
+      color: #ff6600;
+    }
+    footer {
+      background-color: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 40px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+    }
+    @media (max-width: 768px) {
+      .shorts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+      nav button {
+        flex-grow: 1; /* Allow buttons to grow and fill space */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>श्री संकटहरण बालाजी महाराज (Arnod balaji)</header>
+  <nav>
+    <button onclick="location.hash='#home'; loadSectionHome()">🏠 होम</button>
+    <button onclick="loadDriveImages()">📷 फोटो</button>
+    <button onclick="loadDriveVideos()">📺 गैलरी विडियो</button>
+
+    <!-- New YouTube Button -->
+    <button onclick="toggleYoutubeButtons()">
+      <i class="fab fa-youtube" style="color:red;"></i> YouTube
+    </button>
+
+    <button onclick="loadDriveAudios()">🎧 भजन </button>
+    <button onclick="loadDrivePaths()">📜 पाठ/स्त्रोत</button>
+    <button onclick="loadDriveSantdarshan()">🕉️ संत दर्शन</button>
+    <button onclick="loadDriveAnimations()">🎭 एनिमेशन</button>
+    <button onclick="loadlabh()">🗓️ चोघडिया</button>
+    <button onclick="window.open('https://www.drikpanchang.com/', '_blank')">🗓️ panchang</button>
+
+    <!-- YouTube Sub-buttons (initially hidden) -->
+    <div id="youtube-sub-buttons">
+      <button onclick="location.hash='#shorts'; loadYoutubeContent('shorts')">🎬 शॉर्ट्स</button>
+      <button onclick="location.hash='#video'; loadYoutubeContent('video')">📹 वीडियो</button>
+      <button onclick="location.hash='#song'; loadYoutubeContent('song')">🎵 सॉन्ग्स</button>
+      <button onclick="location.hash='#release'; loadYoutubeContent('release')">🚩 रिलीज</button>
+      <button onclick="location.hash='#movie'; loadYoutubeContent('movie')">🎥 मुवी</button>
+      <button onclick="location.hash='#live'; loadYoutubeContent('live')">🔴 लाईव</button>
+      <button onclick="location.hash='#podcast'; loadYoutubeContent('podcast')">🎙️ पॉडकास्ट</button>
+    </div>
+  </nav>
+
+  <div id="content"></div>
+
+  <footer>
+    <div>© 2025 श्री संकटहरण बालाजी महाराज, अरनोद (राजस्थान)</div>
+    <div style="margin-top:10px;">
+      <a href="https://www.instagram.com/srisankataharanabalajimaharaja" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@sankatharanbalaji" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://youtube.com/@arnodbalaji" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://whatsapp.com/channel/0029VbBLPeZEgGfDMHT1Ev09" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const API_KEY = "AIzaSyCe0tRcwMYyGMThwK06wGV9TRkGQVNHRmY"; // यह API key उदाहरण के लिए है, आपको अपनी वैध YouTube Data API key से बदलनी होगी।
+    const CHANNEL_IDS = [
+      "UCQCYNHOtnk1NZbS4OUob0fA",
+      "UCrfY-jo7YykrCgBWLolMnIw"
+    ];
+    const CATEGORIES = {
+      shorts: ["shorts", "virayalshorts", "Viralshorts", "viralshort", "virayalshort", "shortsfeed", "shortfeed", "#virayalshorts", "virayalshort", "#viralshorts", "#virayalshort"],
+
+      video: ["video", "full video", "new song", "song", "new bhajan", "#virayalvideo", "#viralvideo", "#viralsong"],
+      song: ["new song", "song", "new bhajan", "#viralsong", "#viralbhajan", "#newsong","#newbhajan", "भजन"],
+      release: ["release", "new song", "song", "new bhajan"],
+      movie: ["animation", "pitcher", "movie", "film", "flim", "animated", "#flim", "#animation", "#animated", "#pitchere"],
+      live: ["live","#live"],
+      podcast: ["prodecast", "#prodcast"]
+    };
+
+    function toggleYoutubeButtons() {
+        const subButtons = document.getElementById("youtube-sub-buttons");
+        if (subButtons.style.display === "flex") {
+            subButtons.style.display = "none";
+        } else {
+            subButtons.style.display = "flex";
+        }
+    }
+
+    async function loadYoutubeContent(type) {
+      const content = document.getElementById("content");
+      content.innerHTML = "लोड हो रहा है...";
+      const keywords = CATEGORIES[type.toLowerCase()] || [];
+      let allVideos = [];
+      for (const channelId of CHANNEL_IDS) {
+        const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelId}&part=snippet&maxResults=30&order=date&type=video`;
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.items) {
+          const filtered = data.items.filter(item =>
+            keywords.some(word =>
+              item.snippet.title.toLowerCase().includes(word.toLowerCase())
+            )
+          );
+          allVideos.push(...filtered);
+        }
+      }
+
+      content.innerHTML = "";
+      const grid = document.createElement("div");
+      grid.className = (type === 'shorts') ? 'shorts-grid' : 'video-grid';
+
+      allVideos.forEach(video => {
+        const wrapper = document.createElement("div");
+        wrapper.style.display = "flex";
+        wrapper.style.flexDirection = "column";
+        wrapper.style.alignItems = "center";
+
+        const frame = document.createElement("iframe");
+        frame.src = `https://www.youtube.com/embed/${video.id.videoId}`;
+        frame.allowFullscreen = true;
+        frame.title = video.snippet.title;
+        frame.style.aspectRatio = (type === 'shorts') ? '9/16' : '16/9';
+        frame.style.width = "100%";
+
+        const title = document.createElement("div");
+        title.className = "video-title";
+        title.textContent = video.snippet.title;
+
+        wrapper.appendChild(frame);
+        wrapper.appendChild(title);
+        grid.appendChild(wrapper);
+      });
+
+      content.appendChild(grid);
+    }
+
+
+    function loadlabh() {
+      const content = document.getElementById("content");
+      content.innerHTML = `
+        <div style="text-align:center; margin-top: 20px;">
+          <img src="https://ik.imagekit.io/123423/%E0%A4%A6%E0%A4%BF%E0%A4%A8-%E0%A4%B0%E0%A4%BE%E0%A4%A4%20%E0%A4%95%E0%A4%BE%20%E0%A4%9A%E0%A5%8C%E0%A4%98%E0%A4%A1%E0%A4%BC%E0%A4%BF%E0%A4%AF%E0%A4%BE.jpeg?updatedAt=1750988577210" alt="पंचांग चौघड़िया" style="max-width:100%; border:4px solid #b22222; border-radius:10px;">
+    <button onclick="window.open('https://www.drikpanchang.com/', '_blank')">🗓️ drikpanchang</button>
+        </div>`;
+        }
+
+
+
+      function loadDriveImages() {
+        document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1RedpNgE_eTi_677bNkynYILCpeU-PjNW#grid" width="100%" height="600" frameborder="0"></iframe>
+        <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1HV4SlZXKMB1icO5b4Fhr3s2PAT2SmFJy#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1YtrV8X6xAhEt1NfWgA2hTA6DXH3f0dBb#grid" width="100%" height="600" frameborder="0"></iframe>
+      <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=133CTA_Pi6sMbLwHujnWqyumv-eVOgHOt#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1Wy3lYjBFdj_rqvyqYz6zlEA5AgDbxiMg#grid" width="100%" height="600" frameborder="0"></iframe>
+    `;
+      }
+
+      function loadDriveAudios() {
+        document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1S4UzltN2AYHhKuU3_O1rF10IGezoAa8t#grid" width="100%" height="300" frameborder="0"></iframe>
+        <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1HBgAWKwGxQTZ29QhQ7_liXbQgyiQV1No#grid" width="100%" height="300" frameborder="0"></iframe>
+        <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1Y_rQnOAT3TgX1IP8XqdARinK5EUb0-GI#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=136EfNwSJ3nnlyH_Px0OOzvB41h3RZrQG#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1X6Nge6Ky2elN1WiTLmNy-t0v7itHaRbl#grid" width="100%" height="300" frameborder="0"></iframe>
+    `;
+  }
+
+
+
+    function loadDriveAnimations() {
+      const content= document.getElementById("content");
+      content.innerHTML = ` <div class="aspect-16by9">
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1Hy4yeizCg0QeUR3XnHX-1xcdD4wqGDqa#grid" width="100%" height="300" frameborder="0"></iframe>
+      <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1ZNl_4bRcDyptFu95u0wQk0yqHFzIrsLp#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=132jOsKX5OTXkiCJpk30zzjCQ0BMzCsg_#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1XEEUEtwwoVlCMHENO5Gbc7pDkdIomKvb#grid" width="100%" height="300" frameborder="0"></iframe>
+    `;
+    }
+
+    function loadDrivePaths() {
+      const content = document.getElementById("content");
+      content.innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1EJiXKKC0UI5N3_xCyN9u25uujOqLr3II#grid" width="100%" height="300" frameborder="0"></iframe>
+      <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JfFAlUSmRutnrY_vu4Xq9ii-GNBOVyD-#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JgdZckAxLzjmCTEtoKxYm06kw6hjsJ44#grid" width="100%" height="300" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JlPZJcmC_z3WztbCMWs0XYwltwldWv9p#grid" width="100%" height="300" frameborder="0"></iframe>
+    `;
+    }
+
+    function loadDriveSantdarshan() {
+      const content = document.getElementById("content");
+      content. innerHTML = `
+      <div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
+    भक्त भक्ति भगवंत गुरु चतुर नाम बपु एक।<br>
+    इनके पद बंदन किएँ नासत विध्न अनेक ।।
+  </div>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JGtz5zP-MNUyn1Ej_vfZZK9lvGe4X7er#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JLE5NMcgdr8-X9NZ2cYjQpVGZIuF_jzg#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JPLm2jG56fTNs-G3slZoCR6S7P-buZMh#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1JQJizkFXlnypVRzuojCmIXPJHKwvUPfG#grid" width="100%" height="600" frameborder="0"></iframe>
+    `;}
+
+      function loadDriveVideos() {
+        document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1RkVFJeudBxw_igih2qcHyD0ReMxaM6Yu#grid" width="100%" height="600" frameborder="0"></iframe>
+        <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1HaKjgZ0pKJpKwhs7MV6fdD4zzSL5hzVQ#grid" width="100%" height="600" frameborder="0"></iframe>
+      <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1YqlSj3fNfw58DjRsObrUY8p0z35qxDjr#grid" width="100%" height="600" frameborder="0"></iframe>
+      <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=139hHnGMAJgITSvLDJEt2dHwv1pMp4dE5#grid" width="100%" height="600" frameborder="0"></iframe>
+    <br>
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1X30_XRiSiwTicTpvz4fOPFvbBSHY4zU6#grid" width="100%" height="600" frameborder="0"></iframe>
+    `;
+      }
+
+      function loadSectionHome() {
+        document.getElementById("content").innerHTML = `
+      <div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
+    सीताराम सीताराम <br>
+    सीताराम सीताराम
+  </div>
+         <img src="https://i.ibb.co/nMLBpWWH/20250326-123129.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
+          <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px">
+            <strong>श्री संकट हरण बालाजी महाराज राजस्थान के प्रतापगढ़ ज़िले के अरनोद कस्बे में स्थित है।</strong> इस मंदिर की विशेषता यह है कि यहाँ विराजमान बालाजी महाराज की मूर्ति स्वयंभू है (स्वतः प्रकट)। यह हनुमान जी की प्रतिमा पहले राजा महाराजा के समय 12 फीट तक ऊंची थी। यह स्थान श्रद्धालुओं के लिए अत्यंत आस्था और विश्वास का केंद्र है।<br><br>
+            मान्यताओं के अनुसार यहां एक सिद्ध महापुरूष भी आए थे जिनका नाम <strong>श्री 1008 श्री जगन्नाथ जी महाराज
+            (श्री होरी हनुमानजी वाले बाबजी)</strong> है।<br>
+            उनके आने के बाद से तो मंदिर में और ज्यादा चमत्कार होने लग गए और उन सिद्ध महापुरूष की कृपा और हनुमान जी महाराज की कृपा से आज भक्तों की मनोकामनाएं पूरी हो रही हैं।
+          </div>
+
+          <img src="https://ik.imagekit.io/123423/Screenshot_20250619-135917.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;"/>
+
+          <div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
+    भक्त भक्ति भगवंत गुरु चतुर नाम बपु एक।<br>
+    इनके पद बंदन किएँ नासत विध्न अनेक ।।
+  </div>
+          <img src="https://ik.imagekit.io/123423/20250623_215133.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;"/>
+
+           <!-- Table remains same -->
+           <table class="platform-table">
+        <thead><tr><th>प्लेटफ़ॉर्म</th><th>Official</th><th>Songs</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><i class="fab fa-youtube" style="color:red"></i> YouTube</td>
+            <td><a href="https://youtube.com/@sankatharanbalaji" target="_blank"><i class="fab fa-youtube"></i> श्री संकटहरण बालाजी महाराज</a></td>
+            <td><a href="https://www.youtube.com/@arnodbalaji" target="_blank"><i class="fab fa-youtube"></i> Arnod balaji</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-music" style="color:#ff0000"></i> YouTube Music</td>
+            <td><a href="https://music.youtube.com/channel/UCQCYNHOtnk1NZbS4OUob0fA" target="_blank"><i class="fas fa-music"></i> YouTube Music</a></td>
+            <td><a href="https://music.youtube.com/channel/UCrfY-jo7YykrCgBWLolMnIw" target="_blank"><i class="fas fa-music"></i> YouTube Music</a></td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-spotify" style="color:#1DB954"></i> Spotify</td>
+            <td><a href="https://open.spotify.com/artist/5Tu1ttfY400yt7jDdM9FmS" target="_blank"><i class="fab fa-spotify"></i> Official</a></td>
+            <td><a href="https://open.spotify.com/artist/4bVvYlTQNPb1Z9tN917lym" target="_blank"><i class="fab fa-spotify"></i> Songs</a></td>
+          </tr>
+          <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/JioSaavn_Logo.png" width="20" style="vertical-align: middle; margin-right: 5px;" /> JioSaavn</td>
+            <td><a href="https://www.jiosaavn.com/artist/sri-sankatharan-balaji-maharaj-mandir-songs/Tm6H0vxApXQ_" target="_blank">Official</a></td>
+            <td><a href="https://www.jiosaavn.com/artist/arnod-balaji/A57Afzc5XuM_" target="_blank">Songs</a></td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-apple" style="color:#000"></i> Apple Music</td>
+            <td><a href="https://music.apple.com/us/artist/sri-sankatharan-balaji-maharaj-mandir-songs/1808988321" target="_blank"><i class="fab fa-apple"></i> Official</a></td>
+            <td><a href="https://music.apple.com/us/artist/arnod-balaji/1811649887" target="_blank"><i class="fab fa-apple"></i> Songs</a></td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-amazon" style="color:#FF9900"></i> Amazon Music</td>
+            <td><a href="https://music.amazon.in/artists/B0F5BDWNH8/sri-sankatharan-balaji-maharaj-mandir-songs" target="_blank"><i class="fab fa-amazon"></i> Official</a></td>
+            <td><a href="https://music.amazon.in/artists/B0F742SRKQ/arnod-balaji" target="_blank"><i class="fab fa-amazon"></i> Songs</a></td>
+          </tr>
+          <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Qobuz_logo.svg" width="20" style="vertical-align: middle; margin-right: 5px;" /> Qobuz</td>
+            <td><a href="https://www.qobuz.com/us-en/label/sri-sankatharan-balaji-maharaj-mandir-songs/download-streaming-albums/8094228" target="_blank">Official</a></td>
+            <td><a href="https://www.qobuz.com/us-en/interpreter/arnod-balaji/26754188" target="_blank">Songs</a></td>
+          </tr>
+          <tr>
+    <td>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Boomplay_logo.svg" width="22" style="vertical-align: middle; margin-right: 5px;" />
+      Boomplay
+    </td>
+    <td colspan="2">
+      <a href="https://www.boomplay.com/artists/110031563?from=&srModel=COPYLINK&srList=WEB" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Boomplay_logo.svg" width="20" style="vertical-align: middle; margin-right: 5px;" />
+        Songs
+      </a>
+    </td>
+  </tr>
+         <tr>
+            <td><i class="fab fa-whatsapp" style="color:#25D366"></i> WhatsApp</td>
+            <td colspan="2"><a href="https://whatsapp.com/channel/0029VbBLPeZEgGfDMHT1Ev09" target="_blank"><i class="fab fa-whatsapp"></i> Channel</a></td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-instagram" style="color:#C13584"></i> Instagram</td>
+            <td colspan="2"><a href="https://www.instagram.com/srisankataharanabalajimaharaja" target="_blank"><i class="fab fa-instagram"></i> Profile</a></td>
+          </tr>
+        </tbody>
+      </table>
+       `;
+      }
+
+      // On hash change (Back/Forward)
+      window.onpopstate = () => {
+        const section = location.hash.replace('#', '');
+        if (section && CATEGORIES[section]) loadYoutubeContent(section); // Changed to loadYoutubeContent
+        else loadSectionHome();
+      };
+
+      // On initial load
+      if (!location.hash || location.hash === '#home') loadSectionHome();
+      else {
+          const section = location.hash.replace('#', '');
+          if (CATEGORIES[section]) {
+              toggleYoutubeButtons(); // Show sub-buttons if a YouTube category is in hash
+              loadYoutubeContent(section);
+          } else {
+              loadSectionHome();
+          }
+      }
+    </script>
+</body>
+</html>
