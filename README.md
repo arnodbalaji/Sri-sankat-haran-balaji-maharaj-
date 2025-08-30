@@ -358,6 +358,18 @@
   </div>
          <img src="https://i.ibb.co/nMLBpWWH/20250326-123129.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
           <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px">
+
+<img src="https://ibb.co/HDnm00gD"><img src="https://i.ibb.co/gMzsGGgM/Whats-App-Image-2025-08-14-at-19-07-40-d53d4013.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
+        <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px">
+<div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
+ॐमेश्वर महादेव
+</div>
+
+<img src="https://ibb.co/93qLzT6X"><img src="https://i.ibb.co/YTtMYkm9/IMG-20250714-203251-162.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
+        <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px"> 
+
+
+          
             <strong>श्री संकट हरण बालाजी महाराज राजस्थान के प्रतापगढ़ ज़िले के अरनोद कस्बे में स्थित है।</strong> इस मंदिर की विशेषता यह है कि यहाँ विराजमान बालाजी महाराज की मूर्ति स्वयंभू है (स्वतः प्रकट)। यह हनुमान जी की प्रतिमा पहले राजा महाराजा के समय 12 फीट तक ऊंची थी। यह स्थान श्रद्धालुओं के लिए अत्यंत आस्था और विश्वास का केंद्र है।<br><br>
             मान्यताओं के अनुसार यहां एक सिद्ध महापुरूष भी आए थे जिनका नाम <strong>श्री 1008 श्री जगन्नाथ जी महाराज
             (श्री होरी हनुमानजी वाले बाबजी)</strong> है।<br>
