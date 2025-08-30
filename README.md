@@ -326,16 +326,9 @@
     भक्त भक्ति भगवंत गुरु चतुर नाम बपु एक।<br>
     इनके पद बंदन किएँ नासत विध्न अनेक ।।
   </div>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1JGtz5zP-MNUyn1Ej_vfZZK9lvGe4X7er#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1JLE5NMcgdr8-X9NZ2cYjQpVGZIuF_jzg#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1JPLm2jG56fTNs-G3slZoCR6S7P-buZMh#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1JQJizkFXlnypVRzuojCmIXPJHKwvUPfG#grid" width="100%" height="600" frameborder="0"></iframe>
-    `;}
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="100%" height="600" frameborder="0"></iframe> `;}
+   
+   
 
       function loadDriveVideos() {
         document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1RkVFJeudBxw_igih2qcHyD0ReMxaM6Yu#grid" width="100%" height="600" frameborder="0"></iframe>
