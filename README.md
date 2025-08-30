@@ -141,6 +141,7 @@
   <header>श्री संकटहरण बालाजी महाराज (Arnod balaji)</header>
   <nav>
     <button onclick="location.hash='#home'; loadSectionHome()">🏠 होम</button>
+    <button onclick="loadDriveSantdarshan()">🕉️ संत दर्शन</button>
     <button onclick="loadDriveImages()">📷 फोटो</button>
     <button onclick="loadDriveVideos()">📺 गैलरी विडियो</button>
 
@@ -151,8 +152,7 @@
 
     <button onclick="loadDriveAudios()">🎧 भजन </button>
     <button onclick="loadDrivePaths()">📜 पाठ/स्त्रोत</button>
-    <button onclick="loadDriveSantdarshan()">🕉️ संत दर्शन</button>
-    <button onclick="loadDriveAnimations()">🎭 एनिमेशन</button>
+  <button onclick="loadDriveAnimations()">🎭 एनिमेशन</button>
     <button onclick="loadlabh()">🗓️ चोघडिया</button>
     <button onclick="window.open('https://www.drikpanchang.com/', '_blank')">🗓️ panchang</button>
 
@@ -267,15 +267,7 @@
 
 
       function loadDriveImages() {
-        document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1RedpNgE_eTi_677bNkynYILCpeU-PjNW#grid" width="100%" height="600" frameborder="0"></iframe>
-        <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1HV4SlZXKMB1icO5b4Fhr3s2PAT2SmFJy#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1YtrV8X6xAhEt1NfWgA2hTA6DXH3f0dBb#grid" width="100%" height="600" frameborder="0"></iframe>
-      <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=133CTA_Pi6sMbLwHujnWqyumv-eVOgHOt#grid" width="100%" height="600" frameborder="0"></iframe>
-    <br>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1Wy3lYjBFdj_rqvyqYz6zlEA5AgDbxiMg#grid" width="100%" height="600" frameborder="0"></iframe>
+        document.getElementById("content").innerHTML = `<iframe src="https://drive.google.com/embeddedfolderview?id=1HV4SlZXKMB1icO5b4Fhr3s2PAT2SmFJy#grid" width="100%" height="600" frameborder="0"></iframe>
     `;
       }
 
