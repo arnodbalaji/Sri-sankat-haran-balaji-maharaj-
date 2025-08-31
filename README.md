@@ -320,7 +320,7 @@
     भक्त भक्ति भगवंत गुरु चतुर नाम बपु एक।<br>
     इनके पद बंदन किएँ नासत विध्न अनेक ।।
   </div>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="100%" height="600" frameborder="0"></iframe> `;}
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="600%" height="1200" frameborder="0"></iframe> `;}
    
    
 
