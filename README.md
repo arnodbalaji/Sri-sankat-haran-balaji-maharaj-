@@ -316,11 +316,12 @@
     function loadDriveSantdarshan() {
       const content = document.getElementById("content");
       content. innerHTML = `
-      <div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
+<iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="600%" height="1200" frameborder="0"></iframe>
+<div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
     भक्त भक्ति भगवंत गुरु चतुर नाम बपु एक।<br>
     इनके पद बंदन किएँ नासत विध्न अनेक ।।
   </div>
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1J9aZqWRXSff0g_O-0UGPSimfnkxay2LP#grid" width="600%" height="1200" frameborder="0"></iframe> `;}
+  `;}
    
    
 
