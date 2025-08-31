@@ -1,8 +1,8 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>श्री संकटहरण बालाजी महाराज | Arnod Balaji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <title>श्री संकटहरण बालाजी महाराज</title>
   <meta name="description" content="श्री संकटहरण बालाजी महाराज, अरनोद (राजस्थान) का आधिकारिक भक्ति पोर्टल - फोटो, भजन, वीडियो, लाइव दर्शन।" />
   <meta name="keywords" content="Arnod Balaji, संकटहरण बालाजी महाराज, मंदिर, भजन, दर्शन, राजस्थान मंदिर" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -146,11 +146,12 @@
     <button onclick="loadDriveVideos()">📺 गैलरी विडियो</button>
 
     <!-- New YouTube Button -->
+    
     <button onclick="toggleYoutubeButtons()">
       <i class="fab fa-youtube" style="color:red;"></i> YouTube
     </button>
 
-    <button onclick="loadDriveAudios()">🎧 भजन </button>
+  <button onclick="loadDriveAudios()">🎧 भजन </button>
     <button onclick="loadDrivePaths()">📜 पाठ/स्त्रोत</button>
   <button onclick="loadDriveAnimations()">🎭 एनिमेशन</button>
     <button onclick="loadlabh()">🗓️ चोघडिया</button>
@@ -158,7 +159,8 @@
 
     <!-- YouTube Sub-buttons (initially hidden) -->
     <div id="youtube-sub-buttons">
-      <button onclick="location.hash='#shorts'; loadYoutubeContent('shorts')">🎬 शॉर्ट्स</button>
+     
+  <button onclick="location.hash='#shorts'; loadYoutubeContent('shorts')">🎬 शॉर्ट्स</button>
       <button onclick="location.hash='#video'; loadYoutubeContent('video')">📹 वीडियो</button>
       <button onclick="location.hash='#song'; loadYoutubeContent('song')">🎵 सॉन्ग्स</button>
       <button onclick="location.hash='#release'; loadYoutubeContent('release')">🚩 रिलीज</button>
@@ -172,7 +174,7 @@
 
   <footer>
     <div>© 2025 श्री संकटहरण बालाजी महाराज, अरनोद (राजस्थान)</div>
-    <div style="margin-top:10px;">
+    <div style="margin-top:07px;">
       <a href="https://www.instagram.com/srisankataharanabalajimaharaja" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://youtube.com/@sankatharanbalaji" target="_blank"><i class="fab fa-youtube"></i></a>
       <a href="https://youtube.com/@arnodbalaji" target="_blank"><i class="fab fa-youtube"></i></a>
