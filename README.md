@@ -347,13 +347,13 @@
          <img src="https://i.ibb.co/nMLBpWWH/20250326-123129.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
           <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px">
 
-<img src="https://ibb.co/HDnm00gD"><img src="https://i.ibb.co/gMzsGGgM/Whats-App-Image-2025-08-14-at-19-07-40-d53d4013.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
+<img src="https://i.ibb.co/gMzsGGgM/Whats-App-Image-2025-08-14-at-19-07-40-d53d4013.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
         <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px">
 <div style="font-size: 2.0rem; font-weight: bold; color: #8B0000; text-align: center; margin: 20px 0; font-family: 'Mangal', 'Segoe UI', sans-serif; line-height: 1.6;">
 ॐमेश्वर महादेव
 </div>
 
-<img src="https://ibb.co/93qLzT6X"><img src="https://i.ibb.co/YTtMYkm9/IMG-20250714-203251-162.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
+<img src="https://i.ibb.co/YTtMYkm9/IMG-20250714-203251-162.jpg" style="width:100%; max-width:600px; border:4px solid #b22222; border-radius:10px; margin:20px 0;" />
         <div style="font-size: 1.45rem; color: #8B0000; text-align: justify; line-height: 1.6; max-width:900px"> 
 
 
