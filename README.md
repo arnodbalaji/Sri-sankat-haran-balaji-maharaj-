@@ -138,7 +138,7 @@
   </style>
 </head>
 <body>
-  <header>श्री संकटहरण बालाजी महाराज (Arnod balaji)</header>
+  <header>श्री संकटहरण बालाजी महाराज</header>
   <nav>
     <button onclick="location.hash='#home'; loadSectionHome()">🏠 होम</button>
     <button onclick="loadDriveSantdarshan()">🕉️ संत दर्शन</button>
